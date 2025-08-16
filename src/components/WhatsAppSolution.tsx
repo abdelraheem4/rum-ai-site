@@ -29,7 +29,7 @@ export default function WhatsAppSolution() {
             </h2>
             
             <p className="text-xl text-gray-600 leading-relaxed">
-              Leverage the world's most popular messaging platform to connect with your customers. 
+              Leverage the world&apos;s most popular messaging platform to connect with your customers. 
               Our AI-powered solutions help you automate responses, provide instant support, and 
               drive engagement across all your business channels.
             </p>

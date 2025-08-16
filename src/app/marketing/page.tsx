@@ -13,6 +13,7 @@ export default function MarketingPage() {
 
       <FeatureGrid
         heading="Features"
+        subheading="Powerful marketing tools to engage customers and drive conversions"
         features={[
           { title: "Brand Introductions", description: "On-brand messaging at the right moment in-chat." },
           { title: "WhatsApp Retargeting", description: "Personalized re-engagement to boost conversions." },

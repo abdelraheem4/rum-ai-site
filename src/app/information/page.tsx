@@ -13,6 +13,7 @@ export default function InformationPage() {
 
       <FeatureGrid
         heading="Features"
+        subheading="Essential tools to enhance customer experience and streamline operations"
         features={[
           { title: "Store Locator", description: "Shares nearest store details via location APIs." },
           { title: "Order Tracking", description: "Pulls live status from your order systems via API." },
