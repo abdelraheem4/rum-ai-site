@@ -22,6 +22,7 @@ export default function Navbar() {
                   width={32}
                   height={32}
                   className="object-contain"
+                  priority
                 />
               </div>
               <span className="text-xl font-bold text-gray-900">RUM AI</span>
