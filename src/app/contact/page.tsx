@@ -34,7 +34,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-3xl px-4 sm:px-6 py-12 md:py-16">
       <h1 className="text-3xl font-semibold tracking-tight">Contact sales</h1>
       <p className="mt-2 text-foreground/70">
-        Tell us about your use case. We’ll show how Rum AI can automate your Sales, Support, and WhatsApp workflows.
+        Tell us about your use case. We’ll show how Rum AI can automate your Sales and Support.
       </p>
 
       <form

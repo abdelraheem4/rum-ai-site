@@ -11,26 +11,16 @@ export default function Hero() {
   const slides = [
     {
       title: "Transform Your Business with",
-      titleHighlight: "AI-Powered WhatsApp Solutions",
-      subtitle: "Automate conversations, boost engagement, and drive growth with our intelligent WhatsApp Business platform.",
-      cta: "Start Free Trial",
-      ctaSecondary: "Contact Sales",
+      titleHighlight: "AI-Powered Solutions",
+      subtitle: "Automate conversations, boost engagement, and drive growth with our intelligent AI Business platform.",
+      cta: "Get Started",
       bgGradient: "from-blue-600 via-purple-600 to-pink-600"
-    },
-    {
-      title: "Reach Customers on",
-      titleHighlight: "Every Channel",
-      subtitle: "The world's most complete customer engagement platform. AI-powered conversations across WhatsApp, SMS, Email, and web.",
-      cta: "Try for Free",
-      ctaSecondary: "Watch Demo",
-      bgGradient: "from-green-600 via-blue-600 to-purple-600"
     },
     {
       title: "AI That Understands",
       titleHighlight: "Your Business",
-      subtitle: "Intelligent chatbots that learn from every interaction, providing personalized customer experiences at scale.",
+      subtitle: "AI understand your business, Intelligent chatbots that learn from every interaction, providing personalized customer experiences at scale.",
       cta: "Get Started",
-      ctaSecondary: "Learn More",
       bgGradient: "from-purple-600 via-pink-600 to-orange-600"
     }
   ];
@@ -93,7 +83,7 @@ export default function Hero() {
               {slides[currentSlide].subtitle}
             </p>
 
-            {/* CTA buttons */}
+            {/* CTA button */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
               <Link
                 href="/contact"
@@ -102,13 +92,6 @@ export default function Hero() {
                 {slides[currentSlide].cta}
                 <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
               </Link>
-              
-              <button className="group inline-flex items-center gap-3 text-slate-300 hover:text-white px-12 py-5 rounded-full font-semibold text-xl transition-all duration-300 border border-slate-600 hover:border-slate-500 hover:bg-slate-800/50">
-                <div className="w-14 h-14 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition-colors">
-                  <Play className="w-6 h-6 ml-1" />
-                </div>
-                {slides[currentSlide].ctaSecondary}
-              </button>
             </div>
           </div>
         </div>
@@ -116,7 +99,6 @@ export default function Hero() {
         {/* Social proof - moved above trust indicators */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-slate-400 mb-8">
           <span>✓ No credit card required</span>
-          <span>✓ 14-day free trial</span>
           <span>✓ Cancel anytime</span>
         </div>
 

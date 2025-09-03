@@ -7,10 +7,8 @@ export default function Footer() {
     product: {
       title: 'Product',
       links: [
-        { name: 'WhatsApp Business API', href: '/products/api' },
         { name: 'AI Chatbot', href: '/products/chatbot' },
-        { name: 'Analytics Dashboard', href: '/products/analytics' },
-        { name: 'Pricing', href: '/pricing' }
+        { name: 'Smart Learning AI', href: '/products/smart-learning' }
       ]
     },
     solutions: {
@@ -18,26 +16,20 @@ export default function Footer() {
       links: [
         { name: 'Customer Support', href: '/solutions/support' },
         { name: 'Marketing & Sales', href: '/solutions/marketing' },
-        { name: 'E-commerce', href: '/solutions/ecommerce' },
-        { name: 'Enterprise', href: '/solutions/enterprise' }
+        { name: 'E-commerce', href: '/solutions/ecommerce' }
       ]
     },
     company: {
       title: 'Company',
       links: [
-        { name: 'About Us', href: '/about' },
-        { name: 'Careers', href: '/careers' },
-        { name: 'Contact', href: '/contact' },
-        { name: 'Blog', href: '/blog' }
+        { name: 'Careers', href: 'mailto:careers@rumai.agency' },
+        { name: 'Contact', href: 'mailto:info@rumai.agency' }
       ]
     },
     support: {
       title: 'Support',
       links: [
-        { name: 'Help Center', href: '/help' },
-        { name: 'Documentation', href: '/docs' },
-        { name: 'API Status', href: '/status' },
-        { name: 'Community', href: '/community' }
+        { name: 'Help Center', href: 'mailto:support@rumai.agency' }
       ]
     }
   };
@@ -60,7 +52,7 @@ export default function Footer() {
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 mr-3 relative">
                 <Image
-                  src="/Rum.AI.png"
+                  src="/logo.png"
                   alt="RUM AI Logo"
                   width={40}
                   height={40}
@@ -70,21 +62,9 @@ export default function Footer() {
               <span className="text-2xl font-bold">RUM AI</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Transform your business with AI-powered WhatsApp Business solutions. 
-              Automate conversations, boost engagement, and drive growth.
+              Transform your business with AI-powered chatbot and WhatsApp Business solutions. Automate conversations, boost engagement, and drive growth.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-5 w-5" />
-                </Link>
-              ))}
-            </div>
+
           </div>
 
           {/* Footer Links */}
@@ -112,17 +92,6 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2024 RUM AI. All rights reserved.
-            </div>
-            <div className="flex space-x-6 text-sm text-gray-400">
-              <Link href="/privacy" className="hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="/cookies" className="hover:text-white transition-colors">
-                Cookie Policy
-              </Link>
             </div>
           </div>
         </div>

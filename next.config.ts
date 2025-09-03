@@ -1,13 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Only use export and basePath for production builds
+  ...(process.env.NODE_ENV === 'production' && {
+    output: 'export',
+    basePath: '/rum-ai-site',
+    assetPrefix: '/rum-ai-site',
+    trailingSlash: true,
+  }),
   images: {
     unoptimized: true, // GitHub Pages doesn't support Next.js image optimization
   },
-  basePath: '/rum-ai-site', // Your actual repo name
-  assetPrefix: '/rum-ai-site',
-  trailingSlash: true, // Recommended for GitHub Pages
 };
 
 export default nextConfig;
